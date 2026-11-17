@@ -5,4 +5,9 @@ export default defineConfig({
     server: { entry: "server" },
   },
   nitro: { preset: "node-server" },
+  vite: {
+    server: {
+      allowedHosts: ["dev118.arvelov.space"],
+    },
+  },
 });
