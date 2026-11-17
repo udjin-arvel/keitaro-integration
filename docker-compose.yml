@@ -17,7 +17,8 @@ services:
     ports:
       - "3018:3018"
     environment:
-      VITE_API_URL: http://localhost:8018
+      VITE_API_URL: ""
+      API_PROXY_TARGET: http://backend:8000
     depends_on:
       - backend
 
